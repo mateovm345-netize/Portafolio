@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Mateo Vargas Martínez</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1> Mateo Vargas Martínez</h1>
+        <nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#metas">Metas</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+    </header>
+
+  
+    <section class="presentacion">
+        <img src="tu-foto.jpg" alt="Foto de Mateo" />
+        <div class="texto">
+            <h2>¡Hola, soy Mateo!</h2>
+            <p>Soy estudiante de análisis y desarrollo de software, apasionado por la tecnología y la programación.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy desarrollador de software especializado en programación y desarrollo web. Este es mi portafolio donde mostraré algunos de mis proyectos y habilidades.</p>
+        </section>
+
+        <section id="Temas de interes">
+            <h2>Temas de interes</h2>
+            <ul>
+                <li>
+                    <h3>HTML</h3>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Mis Proyectos">
+            <h2>Mis Proyectos</h2>
+            <ul>
+                <li>
+                    <h3>Proyecto 1</h3>
+                    <p>Graduarme de esta tecnología de análisis y desarrollo de software.</p>
+                </li>
+                <li>
+                    <h3>Proyecto 2</h3>
+                    <p>Terminar este portafolio en su totalidad.</p>
+                </li>
+            </ul>
+        </section>
+
+       <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mateo Vargas Martínez.</p>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
