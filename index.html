@@ -1,5 +1,3 @@
-/!-- salva --/
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Mateo Vargas Martínez</title>
     <link rel="stylesheet" href="src/css/styles.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1> Mateo Vargas Martínez</h1>
+        <h1>Mateo Vargas Martínez</h1>
+
         <nav>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">☰</label>
-    <div class="nav-links">
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre">Sobre mí</a>
-      <a href="#metas">Metas</a>
-      <a href="#intereses">Intereses</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#intereses">Intereses</a>
+                <a href="#proyectos">Metas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
     </header>
 
-  
-    <section class="presentacion">
-        <img src="tu-foto.jpg" alt="Foto de Mateo" />
+    <section id="inicio" class="presentacion">
+        <img src="tu-foto.jpg" alt="Foto de Mateo">
         <div class="texto">
             <h2>¡Hola, soy Mateo!</h2>
             <p>Soy estudiante de análisis y desarrollo de software, apasionado por la tecnología y la programación.</p>
@@ -36,47 +41,62 @@
     <main>
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <p>Soy desarrollador de software especializado en programación y desarrollo web. Este es mi portafolio donde mostraré algunos de mis proyectos y habilidades.</p>
+            <p>
+                Soy desarrollador de software especializado en programación y desarrollo web.
+                Este es mi portafolio donde mostraré algunos de mis proyectos y habilidades.
+            </p>
         </section>
 
-        <section id="Temas de interes">
-            <h2>Temas de interes</h2>
-            <ul>
-                <li>
-                    <h3>HTML</h3>
-                </li>
-                <li>
-                    <h3>CSS</h3>
-                </li>
-                <li>
-                    <h3>JAVASCRIPT</h3>
-                </li>
-            </ul>
+        <section id="intereses">
+            <h2>Temas de interés</h2>
+
+            <div class="diagrama-habilidades">
+                <div class="habilidad">
+                    <span class="etiqueta">HTML</span>
+                    <div class="barra-contenedor">
+                        <div class="barra" style="--porcentaje: 70%;">70%</div>
+                    </div>
+                </div>
+
+                <div class="habilidad">
+                    <span class="etiqueta">CSS</span>
+                    <div class="barra-contenedor">
+                        <div class="barra" style="--porcentaje: 65%;">65%</div>
+                    </div>
+                </div>
+
+                <div class="habilidad">
+                    <span class="etiqueta">JavaScript</span>
+                    <div class="barra-contenedor">
+                        <div class="barra" style="--porcentaje: 10%;">10%</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="Mis Proyectos">
-            <h2>Mis Proyectos</h2>
+        <section id="proyectos">
+            <h2>Metas</h2>
             <ul>
                 <li>
-                    <h3>Proyecto 1</h3>
-                    <p>Graduarme de esta tecnología de análisis y desarrollo de software.</p>
+                    <h3>Meta 1</h3>
+                    <p>Graduarme de la tecnología en análisis y desarrollo de software.</p>
                 </li>
                 <li>
-                    <h3>Proyecto 2</h3>
+                    <h3>Meta 2</h3>
                     <p>Terminar este portafolio en su totalidad.</p>
                 </li>
             </ul>
         </section>
 
-       <section id="contacto">
-    <h2>Contacto</h2>
-    <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo" required />
-      <textarea rows="4" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -85,3 +105,4 @@
 
     <script src="src/js/main.js"></script>
 </body>
+</html>
