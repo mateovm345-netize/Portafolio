@@ -13,25 +13,27 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>Mateo Vargas Martínez</h1>
 
-        <nav>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">☰</label>
+        <!-- Toggle del menú -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
 
-            <div class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#intereses">Intereses</a>
-                <a href="#proyectos">Metas</a>
-                <a href="#contacto">Contacto</a>
-            </div>
+        <!-- Menú -->
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#intereses">Intereses</a>
+            <a href="#proyectos">Metas</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
+    <!-- Presentación -->
     <section id="inicio" class="presentacion">
-        <img src="tu-foto.jpg" alt="Foto de Mateo">
+        <img src="src/img/perfil.jpg" alt="Foto de Mateo" class="foto-perfil">
         <div class="texto">
             <h2>¡Hola, soy Mateo!</h2>
             <p>Soy estudiante de análisis y desarrollo de software, apasionado por la tecnología y la programación.</p>
@@ -39,6 +41,8 @@
     </section>
 
     <main>
+
+        <!-- SOBRE MÍ -->
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
             <p>
@@ -47,6 +51,7 @@
             </p>
         </section>
 
+        <!-- INTERESES -->
         <section id="intereses">
             <h2>Temas de interés</h2>
 
@@ -74,35 +79,59 @@
             </div>
         </section>
 
+        <!-- METAS -->
         <section id="proyectos">
             <h2>Metas</h2>
-            <ul>
-                <li>
-                    <h3>Meta 1</h3>
-                    <p>Graduarme de la tecnología en análisis y desarrollo de software.</p>
-                </li>
-                <li>
-                    <h3>Meta 2</h3>
-                    <p>Terminar este portafolio en su totalidad.</p>
-                </li>
-            </ul>
+
+            <div class="metas-grid">
+                <div class="meta-card">
+                    <div class="meta-icon">🎓</div>
+                    <h3>Graduación</h3>
+                    <p>Graduarme como tecnólogo en Análisis y Desarrollo de Software, fortaleciendo mis bases en programación, arquitectura web y resolución de problemas para avanzar en mi camino como desarrollador.</p>
+                </div>
+
+                <div class="meta-card">
+                    <div class="meta-icon">💻</div>
+                    <h3>Portafolio completo</h3>
+                    <p>Terminar por completo este portafolio, aplicando buenas prácticas de diseño web, estructura y usabilidad para construir una presentación profesional de mi trabajo.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- CONTACTO -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <form onsubmit="event.preventDefault(); alert('Mensaje enviado');">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu correo" required>
-                <textarea rows="4" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar.</button>
-            </form>
+            <p>Por favor, completa el formulario para ponerte en contacto conmigo:</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUcoX02yPFwDzaNhSHwdT7893o9ATSkoioDgwoyaMTO6NRqg/viewform?usp=sf_link"
+               target="_blank" rel="noopener noreferrer">
+                <button>Ir al formulario de contacto</button>
+            </a>
         </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mateo Vargas Martínez.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contenido">
+
+            <div class="footer-info">
+                <h3>Mateo Vargas Martínez</h3>
+                <p>Desarrollador en formación | Diseño Web | Programación</p>
+            </div>
+
+            <div class="footer-redes">
+                <a href="mailto:mateovm345@gmail.com" target="_blank">📧 Correo</a>
+                <a href="https://www.facebook.com/search/top?q=Mateo%20Vargas" target="_blank">📘 Facebook</a>
+                <a href="https://github.com/TU_USUARIO_AQUI" target="_blank">🐱 GitHub</a>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">© 2025 Mateo Vargas Martínez.</p>
     </footer>
 
     <script src="src/js/main.js"></script>
+
 </body>
 </html>
